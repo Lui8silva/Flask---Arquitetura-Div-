@@ -6,4 +6,7 @@ class Index():
 
 class CalcController():
   def div(num1, num2):
-    return f'Div = {int(num1) / int(num2)}'
+    if int(num2) == 0:
+      return 'Divisão por zero!'
+    else:
+      return f'Div = {int(num1) / int(num2)}'
